@@ -12,12 +12,12 @@ using System.Linq;
 using System.Text;
 using System.Data.Linq;
 
-using HYD.Business.Model;
-using HYD.EMS.DAL;
-using HYD.EMS.DataBase;
+using YIPENG.Business.Model;
+using YIPENG.DAL;
+using YIPENG.DataBase;
 using System.Data;
 
-namespace HYD.Business.DAL
+namespace YIPENG.Business.DAL
 {
     /// <summary>
     /// 数据访问(自定义部分类，扩展类的方法，实现与自动生成的代码分离,支持DataTable,DataSet,存储过程等)

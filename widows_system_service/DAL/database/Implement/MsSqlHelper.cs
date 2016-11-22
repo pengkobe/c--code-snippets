@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using System.Web;
 using System.Text.RegularExpressions;
 
-namespace HYD.EMS.DataBase {
+namespace YIPENG.DataBase {
     /// <summary>
     /// SqlServer数据访问,执行完毕请释放资源
     /// MsSqlHelper msSql = DbUtility.MsSqlHelper;

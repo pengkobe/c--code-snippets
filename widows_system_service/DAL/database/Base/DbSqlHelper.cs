@@ -5,7 +5,7 @@ using System.Data.Common;
 using System.Data; 
 using System.Web;
 
-namespace HYD.EMS.DataBase
+namespace YIPENG.DataBase
 {
     public abstract class DbSqlHelper<T> : ISqlHelper<T>
     {

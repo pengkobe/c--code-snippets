@@ -7,7 +7,7 @@
 ** Description: 
 *********************************************************************************/
 using System;
-namespace HYD.Business.Model
+namespace YIPENG.Business.Model
 {
     /// <summary>
     /// WeatherCity

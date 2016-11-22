@@ -6,7 +6,7 @@ using System.Web;
 
 #endregion
 
-namespace HYD.E3.ServerPush
+namespace YIPENG.E3.ServerPush
 {
     public class ServerPush : IHttpAsyncHandler
     {

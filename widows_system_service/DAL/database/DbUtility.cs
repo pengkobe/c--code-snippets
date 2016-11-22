@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Configuration;
 
-namespace HYD.EMS.DataBase
+namespace YIPENG.DataBase
 {
     /// <summary>
     /// 创建数据库访问对象

@@ -7,8 +7,8 @@
     <ProjectGuid>{9C3856C0-B362-4DE6-ABC4-6E3958090EE5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HYD.E3.SystemService</RootNamespace>
-    <AssemblyName>HYD.E3.SystemService</AssemblyName>
+    <RootNamespace>YIPENG.E3.SystemService</RootNamespace>
+    <AssemblyName>YIPENG.E3.SystemService</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

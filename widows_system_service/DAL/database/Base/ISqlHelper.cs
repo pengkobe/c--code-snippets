@@ -5,16 +5,16 @@ using System.Data.Common;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace HYD.EMS.DataBase
+namespace YIPENG.DataBase
 {
     /// <summary>
-    /// ISqlHelper½Ó¿Ú:¶ÔSqlHelperµÄÍ³Ò»ÃèÊö
+    /// ISqlHelperï¿½Ó¿ï¿½:ï¿½ï¿½SqlHelperï¿½ï¿½Í³Ò»ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     public interface ISqlHelper<T> : IDisposable
     {
 
         /// <summary>
-        /// »ñÈ¡µ±Ç°µÄÊý¾Ý¿âÁ¬½Ó¶ÔÏó
+        /// ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½ï¿½
         /// </summary>
         DbConnection Connection
         {
@@ -23,78 +23,78 @@ namespace HYD.EMS.DataBase
 
 
         /// <summary>
-        /// ¿ªÆôÊÂÎñ
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         void BeginTransaction();
 
         /// <summary>
-        /// Ìá½»ÊÂÎñ
+        /// ï¿½á½»ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         void Commit();
 
         /// <summary>
-        /// »Ø¹öÊÂÎñ
+        /// ï¿½Ø¹ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         void Rollback();
 
         ///// <summary>
-        ///// Ö´ÐÐSQLÓï¾ä·µ»ØÊÜÓ°ÏìµÄÐÐÊý
+        ///// Ö´ï¿½ï¿½SQLï¿½ï¿½ï¿½ä·µï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         ///// </summary>
-        ///// <param name="cmdType">Óï¾äÀàÐÍ</param>
-        ///// <param name="cmdText">SQLÓï¾ä</param>
-        ///// <returns>ÊÜÓ°ÏìµÄÐÐÊý</returns>
+        ///// <param name="cmdType">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</param>
+        ///// <param name="cmdText">SQLï¿½ï¿½ï¿½ï¿½</param>
+        ///// <returns>ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</returns>
         //int ExecuteNonQuery(CommandType cmdType, string cmdText, ParameterCollection<T> dbParameter);
 
         ///// <summary>
-        ///// Ö´ÐÐSQLÓï¾ä·µ»ØÊÜÓ°ÏìµÄÐÐÊý
+        ///// Ö´ï¿½ï¿½SQLï¿½ï¿½ï¿½ä·µï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         ///// </summary>
-        ///// <param name="cmdText">SQLÓï¾ä</param>
-        ///// <returns>ÊÜÓ°ÏìµÄÐÐÊý</returns>
+        ///// <param name="cmdText">SQLï¿½ï¿½ï¿½ï¿½</param>
+        ///// <returns>ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</returns>
         //int ExecuteNonQuery(string cmdText, ParameterCollection<T> dbParameter);
 
         ///// <summary>
-        ///// Ö´ÐÐSQLÓï¾ä·µ»Ø¼ÇÂ¼¼¯
+        ///// Ö´ï¿½ï¿½SQLï¿½ï¿½ï¿½ä·µï¿½Ø¼ï¿½Â¼ï¿½ï¿½
         ///// </summary>
-        ///// <param name="cmdType">Óï¾äÀàÐÍ</param>
-        ///// <param name="cmdText">SQLÓï¾ä</param>
-        ///// <returns>¼ÇÂ¼¼¯</returns>
+        ///// <param name="cmdType">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</param>
+        ///// <param name="cmdText">SQLï¿½ï¿½ï¿½ï¿½</param>
+        ///// <returns>ï¿½ï¿½Â¼ï¿½ï¿½</returns>
         //DbDataReader ExecuteReader(CommandType cmdType, string cmdText, ParameterCollection<T> dbParameter);
 
         ///// <summary>
-        ///// Ö´ÐÐSQLÓï¾ä·µ»Ø¼ÇÂ¼¼¯
+        ///// Ö´ï¿½ï¿½SQLï¿½ï¿½ï¿½ä·µï¿½Ø¼ï¿½Â¼ï¿½ï¿½
         ///// </summary>
-        ///// <param name="cmdText">SQLÓï¾ä</param>
-        ///// <returns>¼ÇÂ¼¼¯</returns>
+        ///// <param name="cmdText">SQLï¿½ï¿½ï¿½ï¿½</param>
+        ///// <returns>ï¿½ï¿½Â¼ï¿½ï¿½</returns>
         //DbDataReader ExecuteReader(string cmdText, ParameterCollection<T> dbParameter);
 
         ///// <summary>
-        ///// Ö´ÐÐSQLÓï¾ä
+        ///// Ö´ï¿½ï¿½SQLï¿½ï¿½ï¿½ï¿½
         ///// </summary>
-        ///// <param name="cmdType">Óï¾äÀàÐÍ</param>
-        ///// <param name="cmdText">SQLÓï¾ä</param>
-        ///// <returns>·µ»ØÊý¾Ý±í</returns>
+        ///// <param name="cmdType">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</param>
+        ///// <param name="cmdText">SQLï¿½ï¿½ï¿½ï¿½</param>
+        ///// <returns>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý±ï¿½</returns>
         //DataTable ExecuteTable(CommandType cmdType, string cmdText, ParameterCollection<T> dbParameter);
 
         ///// <summary>
-        ///// Ö´ÐÐSQLÓï¾ä
+        ///// Ö´ï¿½ï¿½SQLï¿½ï¿½ï¿½ï¿½
         ///// </summary>
-        ///// <param name="cmdText">SQLÓï¾ä</param>
-        ///// <returns>·µ»ØÊý¾Ý±í</returns>
+        ///// <param name="cmdText">SQLï¿½ï¿½ï¿½ï¿½</param>
+        ///// <returns>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý±ï¿½</returns>
         //DataTable ExecuteTable(string cmdText, ParameterCollection<T> dbParameter);
 
         ///// <summary>
-        ///// ·µ»ØÖ´ÐÐSQLÓï¾äµÚÒ»¸öÖµ
+        ///// ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½SQLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµ
         ///// </summary>
-        ///// <param name="cmdType">Óï¾äÀàÐÍ</param>
-        ///// <param name="cmdText">SQLÓï¾ä</param>
-        ///// <returns>Ö´ÐÐ½á¹û</returns>
+        ///// <param name="cmdType">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</param>
+        ///// <param name="cmdText">SQLï¿½ï¿½ï¿½ï¿½</param>
+        ///// <returns>Ö´ï¿½Ð½ï¿½ï¿½ï¿½</returns>
         //object ExecuteScalar(CommandType cmdType, string cmdText, ParameterCollection<T> dbParameter);
 
         ///// <summary>
-        ///// ·µ»ØÖ´ÐÐSQLÓï¾äµÚÒ»¸öÖµ
+        ///// ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½SQLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµ
         ///// </summary>
-        ///// <param name="cmdText">SQLÓï¾ä</param>
-        ///// <returns>Ö´ÐÐ½á¹û</returns>
+        ///// <param name="cmdText">SQLï¿½ï¿½ï¿½ï¿½</param>
+        ///// <returns>Ö´ï¿½Ð½ï¿½ï¿½ï¿½</returns>
         //object ExecuteScalar(string cmdText, ParameterCollection<T> dbParameter);
     }
 }

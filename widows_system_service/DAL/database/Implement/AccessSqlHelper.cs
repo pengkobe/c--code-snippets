@@ -7,7 +7,7 @@ using System.Configuration;
 using System.Web;
 using System.Data.OleDb;
 
-namespace HYD.EMS.DataBase
+namespace YIPENG.DataBase
 {
     /// <summary>
     /// AccessSqlHelper数据访问

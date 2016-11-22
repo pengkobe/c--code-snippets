@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using HYD.EMS.DataBase;
+using YIPENG.DataBase;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace HYD.EMS.DAL
+namespace YIPENG.DAL
 {
     /// <summary>
     /// 基类数据访问

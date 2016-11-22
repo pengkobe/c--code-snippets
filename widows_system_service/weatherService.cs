@@ -11,16 +11,16 @@ using System.Text;
 //
 using System.Web.Script.Serialization;
 
-using HYD.Business.DAL;
-using HYD.Business.Model;
-using HYD.Business;
+using YIPENG.Business.DAL;
+using YIPENG.Business.Model;
+using YIPENG.Business;
 
 
-namespace HYD.E3.SystemService
+namespace YIPENG.E3.SystemService
 {
     partial class weatherService : ServiceBase
     {
-        const string apiKey = "b516f557073749c7291363cd156ec92f";
+        const string apiKey = "";
         const string url = "http://apis.baidu.com/heweather/weather/free";
 
         public weatherService()
@@ -83,9 +83,6 @@ namespace HYD.E3.SystemService
 
         public void ChkDaily(object source, System.Timers.ElapsedEventArgs e)
         {
-            //int intHour = e.SignalTime.Hour;
-            //int intMinute = e.SignalTime.Minute;
-            //int intSecond = e.SignalTime.Second;
              try
              {
                  System.Timers.Timer tt = (System.Timers.Timer)source;

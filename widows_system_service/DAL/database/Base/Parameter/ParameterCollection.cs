@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Data.Common;
 
-namespace HYD.EMS.DataBase
+namespace YIPENG.DataBase
 {
     /// <summary>
     /// 数据访问参数集合

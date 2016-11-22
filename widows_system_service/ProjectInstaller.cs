@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Configuration.Install;
 using System.Linq;
 
-namespace HYD.E3.SystemService
+namespace YIPENG.E3.SystemService
 {
     [RunInstaller(true)]
     public partial class ProjectInstaller : System.Configuration.Install.Installer

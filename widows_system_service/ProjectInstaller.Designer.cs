@@ -1,4 +1,4 @@
-﻿namespace HYD.E3.SystemService
+﻿namespace YIPENG.E3.SystemService
 {
     partial class ProjectInstaller
     {

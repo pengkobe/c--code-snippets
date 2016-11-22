@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 #region 命名空间
-//using WebChatSDK;
-using HYD.E3.Business.Model;
-//using Newtonsoft.Json;
+using YIPENG.E3.Business.Model;
 using System.Web;
 using System.Threading;
 #endregion
 
-namespace HYD.E3.ServerPush
+namespace YIPENG.E3.ServerPush
 {
     public class ServerPushHandler
     {

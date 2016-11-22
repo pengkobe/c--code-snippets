@@ -7,7 +7,7 @@ using System.Threading;
 using System.Collections;
 #endregion
 
-namespace HYD.E3.ServerPush
+namespace YIPENG.E3.ServerPush
 {
     public class ServerPushResult : IAsyncResult
     {

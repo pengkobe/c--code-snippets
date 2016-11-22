@@ -10,11 +10,11 @@ using System.IO;
 
 using System.Security.Cryptography;
 using System.Web;
-using HYD.Business.DAL;
-using HYD.Business.Model;
-using HYD.EMS.DataBase;
+using YIPENG.Business.DAL;
+using YIPENG.Business.Model;
+using YIPENG.DataBase;
 
-namespace HYD.Business
+namespace YIPENG.Business
 {
     public class WeatherBLL 
     {

@@ -9,7 +9,7 @@
 using System;
 using System.Data.Linq.Mapping;
 
-namespace HYD.Business.Model
+namespace YIPENG.Business.Model
 {
 
     public class WeatherData
